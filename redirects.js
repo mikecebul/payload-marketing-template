@@ -13,17 +13,6 @@ const redirects = async () => {
   }
   const additionalRedirects = [
     {
-      source: '/wp/:path*',
-      destination: '/',
-      permanent: true,
-    },
-    {
-      // Redirect for 'rdfk' with an extension
-      source: '/rdfk:extension(\\.[^.]+)',
-      destination: '/rdfk',
-      permanent: false,
-    },
-    {
       source: '/home',
       destination: '/',
       permanent: true,
